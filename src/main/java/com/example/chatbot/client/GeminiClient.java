@@ -37,7 +37,7 @@ public class GeminiClient {
         return webClient.post()
                 .uri(url)
                 .header("Content-Type", "application/json")
-                .header("X-goog-api-key", "AIzaSyDyqHL9oDRrqh8p1wauH4xYfTXQzySjoIU") // ✅ add this
+                .header("X-goog-api-key", "apiKey") // ✅ add this
                 .bodyValue(requestBody)
                 .retrieve()
                 .onStatus(
